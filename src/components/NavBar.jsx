@@ -9,6 +9,7 @@ import SchoolIcon from '@mui/icons-material/School';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import PersonSearchIcon from '@mui/icons-material/PersonSearch';
 import NoteAddIcon from '@mui/icons-material/NoteAdd';
+import TerminalIcon from '@mui/icons-material/Terminal';
 import { useNavigateStore } from '../stores/navegation.store';
 
 const NavBar = () => {
@@ -17,7 +18,12 @@ const NavBar = () => {
     const setPage = useNavigateStore(state=> state.setPage)
 
     const handleChange = (event, newValue) => {
-      setPage(newValue);
+      if(newValue !== page){
+        setPage(newValue);
+      }else{
+        setPage('');
+      }
+      
     };
   return (
 <BottomNavigation value={page} onChange={handleChange} className='rounded-md' showLabels>
@@ -40,6 +46,11 @@ const NavBar = () => {
       label="Habilidades" 
       value="habilidades" 
       icon={<PersonSearchIcon />} 
+      />
+      <BottomNavigationAction 
+      label="Programación" 
+      value="programacion" 
+      icon={<TerminalIcon />} 
       />
       <BottomNavigationAction 
       label="Otros" 
