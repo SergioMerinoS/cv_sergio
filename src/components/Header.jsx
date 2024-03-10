@@ -1,29 +1,36 @@
 import { useEffect, useState } from 'react'
-
+import mapache from '../assets/img/mapache.png'
+import NavBar from './NavBar';
+import InfoBase from '../pages/InfoBase';
 const Header = () => {
-    const [edad, setEdad] = useState(0);
-    useEffect(() => {
-        const edad = new  Date().getFullYear() - 2001;
-        setEdad(edad);
 
-    }, [])
-  return (
-    <>
-        <div className='w-full h-screen flex flex-row justify-center transition delay-700 duration-300 ease-in-out bg-gradient-to-l hover:bg-gradient-to-r from-purple-500 to-pink-500 '>
-            <div className='w-1/2 my-auto flex flex-col gap-4'>
-                <h1 className='text-5xl font-bold text-center underline decoration-sky-500'>Sergio Merino</h1>
-                <h1 className='text-5xl font-bold text-center underline decoration-sky-500'>Saceda</h1>
+    return (
+        <>
+            <div className='w-full h-screen flex flex-row gap-5  justify-center py-10'>
+                <div className='my-auto flex flex-col gap-2 mx-2'>
+                    <div className='my-auto flex flex-row gap-4 rounded-md p-5  bg-slate-50 shadow-lg' >
+                        <div className='my-auto flex flex-col gap-4'>
+                            <h1 className='text-5xl font-bold text-center'><span className=' underline decoration-sky-500'>Sergio</span> Merino</h1>
+                            <h1 className='text-5xl font-bold text-center'>Saceda</h1>
+                        </div>
+                        <div>
+                            <img src={mapache} className='rounded-md w-[300px]' />
+                        </div>
 
-                
-                <p className='text-center text-xl underline decoration-red-500'>Edad: {edad}</p>
-                
+                    </div>
+
+                    <NavBar/>
+
+
+                    <InfoBase/>
+
+
+                </div>
+
+
             </div>
-            <div className='w-1/2'>
-
-            </div>
-        </div>
-    </>
-  )
+        </>
+    )
 }
 
 export default Header
