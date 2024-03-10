@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react'
 import mapache from '../assets/img/mapache.png'
 import NavBar from './NavBar';
 import InfoBase from '../pages/InfoBase';
+import { useNavigateStore } from '../stores/navegation.store';
 const Header = () => {
-
+    const page = useNavigateStore(state=> state.page)
     return (
         <>
             <div className='w-full h-screen flex flex-row gap-5  justify-center py-10'>
@@ -21,8 +22,12 @@ const Header = () => {
 
                     <NavBar/>
 
-
-                    <InfoBase/>
+                    {
+                        page == 'info' 
+                        && 
+                        <InfoBase/>
+                    }
+                    
 
 
                 </div>
