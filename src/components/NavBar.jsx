@@ -52,11 +52,11 @@ const NavBar = () => {
       value="programacion" 
       icon={<TerminalIcon />} 
       />
-      <BottomNavigationAction 
+      {/* <BottomNavigationAction 
       label="Otros" 
       value="otros" 
       icon={<NoteAddIcon />} 
-      />
+      /> */}
     </BottomNavigation>
   )
 }

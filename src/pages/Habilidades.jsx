@@ -34,7 +34,7 @@ const Habilidades = () => {
     return (
         <motion.div variants={container} initial="hidden" animate="show" className="flex flex-col gap-4 rounded-md p-3 bg-slate-50 shadow-lg">
             <motion.p variants={item} className="text-xl font-bold underline decoration-sky-500">
-                Habilidades Blandas:
+                Habilidades:
             </motion.p>
             {habilidadesBlandas.map((habilidad, index) => (
                 <motion.div key={index} variants={item} className="text-lg flex items-center gap-2 text-center">

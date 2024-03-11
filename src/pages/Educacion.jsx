@@ -50,14 +50,14 @@ const Educacion = () => {
         
       ]
   return (
-    <motion.div variants={container} initial="hidden" animate="show" className=" flex flex-col gap-4 rounded-md p-3 bg-slate-50 shadow-lg">
+    <motion.div variants={container} initial="hidden" animate="show" className="flex flex-col gap-6 rounded-xl p-6 bg-gradient-to-br from-blue-50 to-green-100 shadow-xl">
         <motion.p
           variants={item}
-          className="underline decoration-green-500 text-xl text-center"
+          className="text-2xl font-semibold text-center text-gray-800"
         >
-          Educación:
+          Educación
         </motion.p>
-        <motion.div variants={item} className="flex flex-col gap-4 mt-5 ">
+        <motion.div variants={item} className="flex flex-col gap-5">
         <TimeLineGen lista={listaEducacion}/>
     </motion.div>
     </motion.div>

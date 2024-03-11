@@ -33,29 +33,29 @@ const InfoBase = () => {
       animate="show"
       className=" mx-auto "
     >
-      <div className="flex flex-col gap-5 rounded-lg p-8 bg-gradient-to-r from-blue-500 to-teal-500 shadow-xl">
+      <div className="flex flex-col gap-5 rounded-lg p-8 bg-gradient-to-r from-blue-50 to-teal-100 shadow-xl">
         <motion.p
           variants={item}
-          className="text-2xl font-bold underline decoration-sky-300 text-center text-white"
+          className="text-2xl font-bold underline decoration-sky-300 text-center"
         >
-          Info Personal
+          Información Personal
         </motion.p>
-        <motion.p variants={item} className="text-lg text-gray-100">
+        <motion.p variants={item} className="text-lg text-gray-900">
           Edad: {edad} años
         </motion.p>
-        <motion.p variants={item} className="text-lg text-gray-100">
+        <motion.p variants={item} className="text-lg text-gray-900">
           Ubicación: L'Hospitalet de Llobregat
         </motion.p>
-        <motion.p variants={item} className="text-lg text-gray-100">
+        <motion.p variants={item} className="text-lg text-gray-900">
           Profesión: Desarrollador Backend y Frontend
         </motion.p>
-        <motion.p variants={item} className="text-lg text-gray-100">
+        <motion.p variants={item} className="text-lg text-gray-900">
           Intereses: Nuevas Tecnologías y Big Data
         </motion.p>
-        <motion.p variants={item} className="text-lg text-gray-100">
+        <motion.p variants={item} className="text-lg text-gray-900">
           Tecnologías Favoritas: React, Tailwind CSS, Nest.js
         </motion.p>
-        <motion.p variants={item} className="text-lg text-gray-100">
+        <motion.p variants={item} className="text-lg text-gray-900">
           Idiomas: Catalán, Castellano
         </motion.p>
       </div>

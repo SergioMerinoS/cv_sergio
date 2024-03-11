@@ -82,7 +82,7 @@ const Programacion = () => {
         <motion.div variants={container} initial="hidden" animate="show" className='max-w-[800px] mx-auto'>
             {Object.entries(categorias).map(([categoria, tecnologias], indexCategoria) => (
                 <div key={indexCategoria} className="mb-8">
-                    <motion.h3 variants={item} className="py-2 text-xl font-bold text-center text-sky-500 mb-4">
+                    <motion.h3 variants={item} className="py-2 text-xl font-bold text-center text-gray-900 mb-4">
                         {categoria}
                     </motion.h3>
                     <motion.div variants={container} className="flex flex-wrap justify-center gap-4">
